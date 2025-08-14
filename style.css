@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100vh;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(fundo\ geral.jpg);
+    
+    background-repeat: no-repeat;
+}
+
+#tabuleiro {
+    width: 730px;
+    height: 730px;
+    border: solid 2px black;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.315);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(fundo_tabuleiro.jpg);
+}
+
+.linha {
+    display: flex;
+}
+
+.linha div {
+    width: 80px;
+    height: 80px;
+}
+
+.linha .preto {
+    background-color: black;
+}
+
+.linha .branco {
+    background-color: white;
+}
+
+.linha .preto:hover {
+    background-color: rgba(116, 116, 116, 0.788);
+}
+
+.linha .branco:hover {
+    background-color: rgba(116, 116, 116, 0.788);
+}
+
+#tabuleiro-xadrez {
+    border: solid 3px black;
+}
+
+
+
+
